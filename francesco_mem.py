@@ -25,5 +25,3 @@ t1 = encode_one_v1(table,col1)
 t2 = encode_one_v1(table,col2)
 t3 = encode_one_v1(table,col3)
 t4 = encode_more_v1(table,cols)
-
-print(t4.shape)
