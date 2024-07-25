@@ -1,7 +1,7 @@
 import narwhals as nw
 from pyarrow import csv
 
-table = csv.read_csv("/workspaces/narwhals/analysis_df.csv")
+table = csv.read_csv("/home/anopsy/Portfolio/juniors_chatgpt/data/analysis_df.csv")
 
 @nw.narwhalify
 def encode_one_v2(df, col):
@@ -25,5 +25,3 @@ t1 = encode_one_v2(table,col1)
 t2 = encode_one_v2(table,col2)
 t3 = encode_one_v2(table,col3)
 t4 = encode_more_v2(table,cols)
-
-print(t4.shape)
